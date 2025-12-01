@@ -16,21 +16,6 @@ const ll mod=1e9+7;
 
 string s; ll ind;
 
-bool S()
-{
-    if(ind<s.size()&&s[ind]=='a')
-    {
-        ind++;
-        if(ind<s.size()&&s[ind]=='b'){ind++;return true;}// base "ab"
-        if(!S())return false;     //S ->a S b
-        
-        if(ind>=s.size() || s[ind]!='b')return false;
-        ind++;
-        return true;
-    }
-    return false;  //empty
-}
-
 
 int32_t main()
 {
@@ -68,4 +53,5 @@ invalid input:
 1
 
 */
+
 
