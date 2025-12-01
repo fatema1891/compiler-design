@@ -27,7 +27,7 @@ int32_t main()
         if(w.size()&&(isalpha(w[0])|| w[0]=='_'))
         {
             bool ok=true;
-            for(size_t i=0;i<w.size();i++)
+            for(size_t i=1;i<w.size();i++)
             {
                 if(!(isalnum(w[i])||w[i]=='_')){ok=false;break;}
             }
@@ -79,4 +79,5 @@ x-y  :Invalid
 
 return  :Keyword
 */
+
 
