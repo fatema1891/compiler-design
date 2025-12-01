@@ -29,7 +29,7 @@ int32_t main()
             bool ok=true;
             for(size_t i=0;i<w.size();i++)
             {
-                if(!(isalnum(w[i]))&&w[i]!='_'){ok=false;break;}
+                if(!(isalnum(w[i])||w[i]=='_')){ok=false;break;}
             }
             if(ok){ cout<<w<<"  :Identifire\n"<<'\n'; continue;}
         }
@@ -79,3 +79,4 @@ x-y  :Invalid
 
 return  :Keyword
 */
+
