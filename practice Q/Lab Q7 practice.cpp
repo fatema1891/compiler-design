@@ -1,5 +1,6 @@
 /*Q7. An NFA has two states: q0 (start) and q1 (accept). 
-Transitions: - From q0 on input a → q1 - From q1 on input b or c → q1 
+Transitions: - From q0 on input a → q1 
+- From q1 on input b or c → q1 
 This NFA accepts strings of the form a(b|c)*. 
 Write a C program that simulates this NFA (by tracking the set of current states) and 
 prints whether a given input string is accepted.
@@ -51,4 +52,5 @@ c       Starts with c, cannot move from q0 → rejected
 aa      a → q1, then a → no transition from q1 → rejected
 abcab   After first a → q1, b → q1, c → q1, a → no transition from q1 → rejected
 (empty string)   Starts in q0, no input, q0 is not accepting → rejected
+
 */
